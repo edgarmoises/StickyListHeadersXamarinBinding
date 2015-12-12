@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="se.emilsjolander.stickylistheaders">
+<class abstract="false" deprecated="not deprecated" extends="android.widget.BaseAdapter" extends-generic-aware="android.widget.BaseAdapter" final="false" name="AdapterWrapper" static="false" visibility="">
+<implements name="se.emilsjolander.stickylistheaders.StickyListHeadersAdapter" name-generic-aware="se.emilsjolander.stickylistheaders.StickyListHeadersAdapter">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItem" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="se.emilsjolander.stickylistheaders.WrapperView" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.DataSetObserver" extends-generic-aware="android.database.DataSetObserver" final="false" name="AdapterWrapper.1" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AdapterWrapper.2" static="false" visibility="">
+<implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AdapterWrapper.OnHeaderClickListener" static="true" visibility="">
+<method abstract="true" deprecated="not deprecated" final="false" name="onHeaderClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="se.emilsjolander.stickylistheaders.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;se.emilsjolander.stickylistheaders&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;2.0&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="se.emilsjolander.stickylistheaders.WrapperView" extends-generic-aware="se.emilsjolander.stickylistheaders.WrapperView" final="false" name="CheckableWrapperView" static="false" visibility="">
+<implements name="android.widget.Checkable" name-generic-aware="android.widget.Checkable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CheckableWrapperView" static="false" type="se.emilsjolander.stickylistheaders.CheckableWrapperView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="isChecked" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setChecked" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toggle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DistinctMultiHashMap" static="false" visibility="">
+<typeParameters>
+<typeParameter name="TKey"/>
+<typeParameter name="TItemValue"/>
+</typeParameters>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TKey">
+</parameter>
+<parameter name="p1" type="TItemValue">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearValues" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="containsValue" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.util.List&lt;TItemValue&gt;">
+</parameter>
+<parameter name="p1" type="TItemValue">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="entrySet" native="false" return="java.util.Set&lt;java.util.Map.Entry&lt;java.lang.Object, java.util.List&lt;TItemValue&gt;&gt;&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="java.util.List&lt;TItemValue&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TKey">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKey" native="false" return="TKey" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TItemValue">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValueByPosition" native="false" return="TItemValue" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeKey" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TKey">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TItemValue">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reverseEntrySet" native="false" return="java.util.Set&lt;java.util.Map.Entry&lt;java.lang.Object, TKey&gt;&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="size" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valuesSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DistinctMultiHashMap.1" static="false" visibility="">
+<implements name="se.emilsjolander.stickylistheaders.DistinctMultiHashMap.IDMapper" name-generic-aware="se.emilsjolander.stickylistheaders.DistinctMultiHashMap.IDMapper&lt;TKey, TItemValue&gt;">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="keyIdToKey" native="false" return="TKey" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="keyToKeyId" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TKey">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valueIdToValue" native="false" return="TItemValue" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valueToValueId" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TItemValue">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DistinctMultiHashMap.IDMapper" static="true" visibility="">
+<typeParameters>
+<typeParameter name="TKey"/>
+<typeParameter name="TItemValue"/>
+</typeParameters>
+<method abstract="true" deprecated="not deprecated" final="false" name="keyIdToKey" native="false" return="TKey" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="keyToKeyId" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TKey">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="valueIdToValue" native="false" return="TItemValue" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="valueToValueId" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TItemValue">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DualHashMap" static="false" visibility="">
+<typeParameters>
+<typeParameter name="TKey"/>
+<typeParameter name="TValue"/>
+</typeParameters>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="TValue" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TKey">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKey" native="false" return="TKey" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TValue">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="put" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TKey">
+</parameter>
+<parameter name="p1" type="TValue">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TKey">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeByValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="TValue">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.BaseAdapter" extends-generic-aware="android.widget.BaseAdapter" final="false" name="ExpandableStickyListHeadersAdapter" static="false" visibility="">
+<implements name="se.emilsjolander.stickylistheaders.StickyListHeadersAdapter" name-generic-aware="se.emilsjolander.stickylistheaders.StickyListHeadersAdapter">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="collapse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="expand" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findItemIdByView" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findViewByItemId" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItem" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemViewsByHeaderId" native="false" return="java.util.List&lt;android.view.View&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHeaderCollapsed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="se.emilsjolander.stickylistheaders.StickyListHeadersListView" extends-generic-aware="se.emilsjolander.stickylistheaders.StickyListHeadersListView" final="false" name="ExpandableStickyListHeadersListView" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ExpandableStickyListHeadersListView" static="false" type="se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ExpandableStickyListHeadersListView" static="false" type="se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ExpandableStickyListHeadersListView" static="false" type="se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="collapse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="expand" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findItemIdByView" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findViewByItemId" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHeaderCollapsed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAnimExecutor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView.IAnimationExecutor">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ANIMATION_COLLAPSE" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ANIMATION_EXPAND" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ExpandableStickyListHeadersListView.1" static="false" visibility="">
+<implements name="se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView.IAnimationExecutor" name-generic-aware="se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView.IAnimationExecutor">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="executeAnim" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ExpandableStickyListHeadersListView.IAnimationExecutor" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="executeAnim" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="se.emilsjolander.stickylistheaders.AdapterWrapper" extends-generic-aware="se.emilsjolander.stickylistheaders.AdapterWrapper" final="false" name="SectionIndexerAdapterWrapper" static="false" visibility="">
+<implements name="android.widget.SectionIndexer" name-generic-aware="android.widget.SectionIndexer">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPositionForSection" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSectionForPosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSections" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="StickyListHeadersAdapter" static="false" visibility="public">
+<implements name="android.widget.ListAdapter" name-generic-aware="android.widget.ListAdapter">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHeaderId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHeaderView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.FrameLayout" extends-generic-aware="android.widget.FrameLayout" final="false" name="StickyListHeadersListView" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="StickyListHeadersListView" static="false" type="se.emilsjolander.stickylistheaders.StickyListHeadersListView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StickyListHeadersListView" static="false" type="se.emilsjolander.stickylistheaders.StickyListHeadersListView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StickyListHeadersListView" static="false" type="se.emilsjolander.stickylistheaders.StickyListHeadersListView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addFooterView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addFooterView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="java.lang.Object">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addHeaderView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addHeaderView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="java.lang.Object">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="areHeadersSticky" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAdapter" native="false" return="se.emilsjolander.stickylistheaders.StickyListHeadersAdapter" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getAreHeadersSticky" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCheckedItemCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCheckedItemIds" native="false" return="long[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCheckedItemPosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCheckedItemPositions" native="false" return="android.util.SparseBooleanArray" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDivider" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDividerHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEmptyView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFirstVisiblePosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFooterViewsCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderOverlap" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderViewsCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemAtPosition" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemIdAtPosition" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLastVisiblePosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getListChildAt" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getListChildCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPositionForView" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStickyHeaderTopOffset" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWrappedList" native="false" return="android.widget.ListView" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateViews" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDrawingListUnderStickyHeader" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFastScrollAlwaysVisible" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStackFromBottom" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRestoreInstanceState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Parcelable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSaveInstanceState" native="false" return="android.os.Parcelable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recomputePadding" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeFooterView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeHeaderView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAdapter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="se.emilsjolander.stickylistheaders.StickyListHeadersAdapter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAreHeadersSticky" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBlockLayoutChildren" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setChoiceMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDivider" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDividerHeight" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDrawingListUnderStickyHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEmptyView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFastScrollAlwaysVisible" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFastScrollEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setItemChecked" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMultiChoiceModeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AbsListView.MultiChoiceModeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnHeaderClickListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="se.emilsjolander.stickylistheaders.StickyListHeadersListView.OnHeaderClickListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnItemClickListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView.OnItemClickListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnItemLongClickListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView.OnItemLongClickListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnScrollListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AbsListView.OnScrollListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnStickyHeaderChangedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="se.emilsjolander.stickylistheaders.StickyListHeadersListView.OnStickyHeaderChangedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnStickyHeaderOffsetChangedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="se.emilsjolander.stickylistheaders.StickyListHeadersListView.OnStickyHeaderOffsetChangedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelectionAfterHeaderView" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelectionFromTop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelector" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelector" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStackFromBottom" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStickyHeaderTopOffset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTranscriptMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="smoothScrollBy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="smoothScrollByOffset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="smoothScrollToPosition" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="smoothScrollToPosition" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="smoothScrollToPositionFromTop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="smoothScrollToPositionFromTop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyListHeadersListView.1" static="false" visibility="">
+<implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyListHeadersListView.2" static="false" visibility="">
+<implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyListHeadersListView.3" static="false" visibility="">
+<implements name="android.view.View.OnTouchListener" name-generic-aware="android.view.View.OnTouchListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTouch" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="android.view.MotionEvent">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.DataSetObserver" extends-generic-aware="android.database.DataSetObserver" final="false" name="StickyListHeadersListView.AdapterWrapperDataSetObserver" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyListHeadersListView.AdapterWrapperHeaderClickHandler" static="false" visibility="">
+<implements name="se.emilsjolander.stickylistheaders.AdapterWrapper.OnHeaderClickListener" name-generic-aware="se.emilsjolander.stickylistheaders.AdapterWrapper.OnHeaderClickListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onHeaderClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="StickyListHeadersListView.OnHeaderClickListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onHeaderClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="se.emilsjolander.stickylistheaders.StickyListHeadersListView">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="StickyListHeadersListView.OnStickyHeaderChangedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onStickyHeaderChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="se.emilsjolander.stickylistheaders.StickyListHeadersListView">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="StickyListHeadersListView.OnStickyHeaderOffsetChangedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onStickyHeaderOffsetChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="se.emilsjolander.stickylistheaders.StickyListHeadersListView">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyListHeadersListView.WrapperListScrollListener" static="false" visibility="">
+<implements name="android.widget.AbsListView.OnScrollListener" name-generic-aware="android.widget.AbsListView.OnScrollListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onScroll" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AbsListView">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onScrollStateChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AbsListView">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="StickyListHeadersListView.WrapperViewListLifeCycleListener" static="false" visibility="">
+<implements name="se.emilsjolander.stickylistheaders.WrapperViewList.LifeCycleListener" name-generic-aware="se.emilsjolander.stickylistheaders.WrapperViewList.LifeCycleListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDispatchDrawOccurred" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.ViewGroup" extends-generic-aware="android.view.ViewGroup" final="false" name="WrapperView" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeader" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItem" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasHeader" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onLayout" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="boolean">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.ListView" extends-generic-aware="android.widget.ListView" final="false" name="WrapperViewList" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="WrapperViewList" static="false" type="se.emilsjolander.stickylistheaders.WrapperViewList" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBlockLayoutChildren" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="WrapperViewList.LifeCycleListener" static="true" visibility="">
+<method abstract="true" deprecated="not deprecated" final="false" name="onDispatchDrawOccurred" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+</method>
+</interface>
+</package>
+</api>

@@ -1,0 +1,6 @@
+/Users/edgarperez/Documents/Lisyx Proyects/StickyExpandableListBinding/StickyExpandableListBinding/obj/Debug/MonoAndroid,Version=v4.0.3.AssemblyAttribute.cs
+/Users/edgarperez/Documents/Lisyx Proyects/StickyExpandableListBinding/StickyExpandableListBinding/obj/Debug/StickyExpandableListBinding.obj.Debug.__AndroidLibraryProjects__.zip
+/Users/edgarperez/Documents/Lisyx Proyects/StickyExpandableListBinding/StickyExpandableListBinding/bin/Debug/StickyExpandableListBinding.dll.mdb
+/Users/edgarperez/Documents/Lisyx Proyects/StickyExpandableListBinding/StickyExpandableListBinding/bin/Debug/StickyExpandableListBinding.dll
+/Users/edgarperez/Documents/Lisyx Proyects/StickyExpandableListBinding/StickyExpandableListBinding/obj/Debug/StickyExpandableListBinding.dll
+/Users/edgarperez/Documents/Lisyx Proyects/StickyExpandableListBinding/StickyExpandableListBinding/obj/Debug/StickyExpandableListBinding.dll.mdb
